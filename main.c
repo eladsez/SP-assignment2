@@ -14,7 +14,7 @@ int main(){
     if(state == 'C')
       Cfunc(matrix);
 
-    else return 0;
+    else return 1;
   }
 
 }

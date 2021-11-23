@@ -3,11 +3,11 @@
 
 #define N 10
 
-  void Afunc(int matrix[N][N]);
+  void Afunc();
 
-  void Bfunc(int matrix[N][N]);
+  int Bfunc( int i, int j);
 
-  void Cfunc(int matrix[N][N]);
+  int Cfunc( int i, int j);
 
 
 #endif

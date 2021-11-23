@@ -3,18 +3,24 @@
 #define N 10
 
 int main(){
-  int matrix[N][N];
   char state;
-  while (scanf("%c",&state) != 'D') {
+  int i,j;
+  scanf("%c",&state);
+  while (state != 'D') {
 
     if(state == 'A')
-      Afunc(matrix);
-    if(state == 'B')
-      Bfunc(matrix);
-    if(state == 'C')
-      Cfunc(matrix);
-
-    else return 1;
+      Afunc();
+    if(state == 'B'){
+      scanf("%d%d",&i,&j);
+      if(Bfunc(i,j))
+        printf("True\n");
+      else printf("False\n");
+    }
+    if(state == 'C'){
+      scanf("%d%d",&i,&j);
+      int c = Cfunc(i,j);
+      printf("%d\n",c);
+    }
+    scanf("%c",&state);
   }
-
 }

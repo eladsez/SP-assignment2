@@ -6,6 +6,9 @@
 
 int tempmatrix[N][N];
 
+int ii = 55;
+static int jj = 88;
+
 void Afunc(){
   for(int i = 0; i < 10; i++){
     for(int j = 0; j < 10; j++)

@@ -3,6 +3,7 @@
 #define N 10
 
 int main(){
+  printf("%d\n",jj);
   char state;
   int i,j;
   scanf("%c",&state);
